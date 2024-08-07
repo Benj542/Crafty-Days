@@ -40,7 +40,7 @@ nav ul li a {
 }
 table {
     font-size: 70%;
-    border-collapse : collapse:
+    border-collapse; collapse;
     width: 100%;
 }
 th, td {
