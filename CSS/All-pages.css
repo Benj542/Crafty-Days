@@ -83,6 +83,8 @@ nav li a:active {
 .hamburger-menu {
     display: none; /* Hidden by default on large screens */
     position: relative;
+    float: right; /* Align to the right on small screens */
+    margin-top: 16px;
 }
 
 .hamburger-menu button {
@@ -96,9 +98,6 @@ nav li a:active {
     font-family: sans-serif;
     font-weight: bold;
     border: 4px solid #111111;
-    float: right;
-    margin-right: 16px;
-    margin-top: 16px;
 }
 
 .hamburger-icon {
@@ -135,11 +134,11 @@ nav li a:active {
     color: white;
 }
 
-.hamburger-menu:hover .hamburger-content {
-    display: block; /* Show dropdown on hover */
+.hamburger-menu.active .hamburger-content {
+    display: block; /* Show dropdown when hamburger menu is active */
 }
 
-.hamburger-menu:hover button {
+.hamburger-menu.active button {
     background-color: #9a529a;
 }
 

@@ -8,13 +8,30 @@
         <link type="text/css" rel="stylesheet" href="CSS/index.css"/>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li class="selected">Home</li>
-                <li><a href="Pages/Our-Creations.html">Our Creations</a></li>
-                <li><a href="Pages/Our-events.html">Our Events</a></li>
-            </ul>
-        </nav>
+        <div class="hamburger-menu">
+            <button onclick="toggleMenu()">
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+            </button>
+            <div class="hamburger-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    
+        <h1>Welcome to Our Website</h1>
+        <p>This page integrates both a traditional horizontal navigation menu and a responsive hamburger menu.</p>
+    
+        <!-- JavaScript to toggle the menu -->
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.hamburger-menu');
+                menu.classList.toggle('active');
+            }
+        </script>
         <h1>About Us</h1>
         <p>We are three siblings who like to make things and we would like other people to be able to enjoy our creations too!</p>
         <p>Our names are <strong>Benjy(aged 12)</strong>, <strong>Leila(aged 10)</strong> and <strong>Maya(aged 7)</strong></p>
