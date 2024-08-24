@@ -63,10 +63,6 @@ td {
 nav li a:active {
     color: darkblue;
 }
-html {
-    font-size: 16px; /* or another base size */
-}
-
-body.h1 {
-    font-size: 5rem; /* This should now be 80px */
+body {
+    font-size: 80px;
 }
